@@ -1,0 +1,22 @@
+{
+  "name": "valley-2",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --port 3030",
+    "present": "slidev --port 3030 --open",
+    "build": "slidev build",
+    "export": "slidev export --output exports/financing-community-needs.pdf --with-clicks false --wait 2000 --wait-until networkidle",
+    "preview": "vite preview --port 3032"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.33"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "npm@11.16.0"
+}
