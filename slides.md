@@ -49,17 +49,14 @@ Open with the practical question: how do we get the money upfront for something 
 section: '00 / About me'
 ---
 
-# Technology for freer ways of living
+# About me
 
 <div class="two-col bio-grid">
-<div>
-<p class="statement">New ways<br>to <em>cooperate.</em><br>More freedom<br>in how we live.</p>
-</div>
 <div class="bio-details">
-<p class="eyebrow">@microHoffman</p>
 <h2>Cypherpunk / Solarpunk</h2>
-<div class="bio-project"><strong>OWN</strong><span>Community financing &amp; ownership</span></div>
-<div class="bio-project"><strong>Closer / TDF</strong><span>Technical contributor<br>Traditional Dream Factory</span></div>
+<h3>Exploring how technologies can help us create new ways of collaboration</h3>
+<div class="bio-project"><strong>OWN</strong></div>
+<div class="bio-project"><strong>Closer / TDF</strong><span>Technical contributor</span></div>
 </div>
 </div>
 
@@ -73,13 +70,11 @@ I explore how technologies can help us build new ways of cooperation and more fr
 # Why do we care about financing?
 
 <div class="needs-grid">
-<div><span class="index">01</span><h2>New land</h2><p>Room to put down roots.</p></div>
-<div><span class="index">02</span><h2>A property</h2><p>A lasting home for the community.</p></div>
-<div><span class="index">03</span><h2>Renovation</h2><p>Make the place work for us.</p></div>
-<div><span class="index">04</span><h2>Infrastructure</h2><p>Expand what we can do together.</p></div>
+<div><span class="index"></span><h2>New land</h2></div>
+<div><span class="index"></span><h2>A property</h2></div>
+<div><span class="index"></span><h2>Renovation</h2></div>
+<div><span class="index"></span><h2>Infrastructure</h2></div>
 </div>
-
-<p class="callout">The common constraint: <strong>we need money upfront.</strong></p>
 
 <!--
 Buying land, buying a building, renovating, and expanding energy, tools or other infrastructure are different projects with the same timing problem. The big expense comes now; the community's income and benefits arrive over time. Invite people to keep their own project in mind through the examples.
@@ -146,8 +141,8 @@ section: '02 / Introducing OWN'
 <p class="lead">Tools to structure loans around real needs<br>and connect borrowers with aligned lenders.</p>
 
 <div class="two-col collateral-paths">
-<div><p class="eyebrow">01 / Start here</p><h2>Crypto collateral</h2><p>ERC-20 tokens &amp; NFTs</p><p class="small muted">Digital assets secure the loan.<br>BORDEL is our first example.</p></div>
-<div><p class="eyebrow">02 / Explore next</p><h2>Tokenized real-world assets</h2><p>For example, shares tied to real estate</p><p class="small muted">Connect onchain collateral<br>to enforceable rights.</p></div>
+<div><p class="eyebrow">01</p><h2>Crypto collateral</h2><p>ERC-20 tokens &amp; NFTs</p><p class="small muted">Digital assets secure the loan.<br>BORDEL is our first example.</p></div>
+<div><p class="eyebrow">02</p><h2>Tokenized real-world assets</h2><p>For example, shares tied to real estate</p><p class="small muted">Connect onchain collateral<br>to enforceable rights.</p></div>
 </div>
 
 <!--
@@ -186,12 +181,12 @@ class: community-slide
 <div>
 <p class="small">A Prague workshop for hackers, makers,<br>artists, and curious people.</p>
 <p class="small muted">Electronics · open-source tools<br>Privacy · experiments · workshops</p>
-<div class="rate-line"><span class="big-number">2.5%</span><span>Borrower rate<br><span class="muted small">reported by the OWN pilot</span></span></div>
-<p class="small">Support the space, with principal<br>and interest repaid over time.</p>
+<br>
+<br>
+<p class="small">Donation alternative: Support the space, with principal<br>and interest repaid over time.</p>
 </div>
 <figure>
 <img class="project-photo" src="/images/bordel-hackerspace.jpeg" alt="Illuminated BORDEL sign inside the hackerspace" />
-<figcaption class="source">BORDEL project photo · pilot.own.casa</figcaption>
 </figure>
 </div>
 
@@ -206,19 +201,12 @@ layout: blueprint
 section: '03 / BORDEL · Onchain coordination'
 ---
 
-# The loan runs onchain
+# So how does BORDEL mortgage works?
 
 <p class="lead">Funding, collateral, and repayments are handled by smart contracts.</p>
 
-<div class="two-col multisig-grid">
-<div><p class="eyebrow">Shared wallet</p><h2>A multisig needs<br>several approvals.</h2><p class="small">Useful when a community<br>manages funds together.</p></div>
-<div><p class="eyebrow">Illustrative / 2 of 3 signers</p><div class="signers"><span class="signed">A ✓</span><span class="signed">B ✓</span><span>C</span><b>→</b><span class="transaction">Execute</span></div><p class="small muted">Propose → collect approvals → execute</p><p class="small">No single key can move the funds alone.</p></div>
-</div>
-
-<p class="source spaced">The property purchase and company ownership still happen in the real world.</p>
-
 <!--
-For the crypto-backed loan mechanism, the transfers and rule checks run onchain; no offchain loan administrator needs to manually release collateral after repayment. Buying the property and maintaining the company still involve offchain actions. A multisig is a wallet requiring a threshold of signers to approve transactions. In an illustrative 2-of-3 wallet, one person proposes a transaction, two signers approve, and the transaction can execute. Useful for a shared treasury, accepting a loan or authorizing repayments. It reduces dependence on one key. This diagram does not claim BORDEL uses exactly 2 of 3 signers. Wallet signing authority and company shares are distinct.
+For the crypto-backed loan mechanism, the transfers and rule checks run onchain; no offchain loan administrator needs to manually release collateral after repayment. Buying the property and maintaining the company still involve offchain actions.
 -->
 
 ---
@@ -274,8 +262,6 @@ class: repayment-slide
 <div><p class="eyebrow outcome-default">Required payment missed</p><h2>The loan defaults.<br>Lenders claim collateral.</h2><p class="small">Previous repayments stay paid.<br>The borrower keeps proceeds not repaid.</p></div>
 </div>
 
-<p class="source">Claims depend on available vault cash; earlier withdrawals can leave later lenders waiting.</p>
-
 <!--
 The borrower makes periodic repayments against the agreed schedule. Following repayments, lenders can claim from the vault. The interface describes pro-rata shares, but the inherited source review documents a first-come cash-access limitation in the vault; do not imply the contract guarantees simultaneous proportional cash access to every lender. The qualification on screen preserves that distinction.
 Full repayment by the required deadlines releases the collateral. Missing an interim required repayment can trigger default before the final maturity; this is not a single end-of-term check. In the crypto loan mechanism, default lets the lender side claim collateral. The borrower loses that collateral and receives no refund of prior repayments. Unrepaid loan proceeds are not automatically clawed back by the contract. This is not a universal statement about legal liabilities outside this mechanism.
@@ -311,8 +297,6 @@ section: '03 / BORDEL · Amortization'
 
 <AmortizationChart />
 
-<p class="source">Illustrative only · €100k loan · €200k collateral held at constant value · equal principal repayments<br>Interest and costs excluded. If collateral prices fall, actual LTV can rise.</p>
-
 <!--
 This is an illustrative amortization pattern, not BORDEL's repayment schedule. Start with €100,000 principal against €200,000 collateral: 50% LTV. Repay €20,000 principal per year, and after one year debt is €80,000 (40% LTV), after three years €40,000 (20%), and after five years zero. The same pledged collateral remains locked until completion or default. The collateral value is held constant to isolate the effect of repayments. In reality a price fall can raise LTV even while debt falls. Interest payments alone do not reduce principal. LTV here uses outstanding principal for a simple teaching example.
 -->
@@ -324,13 +308,29 @@ section: '03 / BORDEL · Ownership'
 # Who owns the hackerspace real estate?
 
 <div class="two-col ownership-grid">
-<div><p class="eyebrow">The property owner</p><h2>A joint-stock company.</h2><p class="small">Collateral contributors receive<br>company shares proportional<br>to their contribution.</p><p class="small muted">Lending money is a different role<br>from owning property equity.</p></div>
-<div><p class="eyebrow">Illustrative allocation</p><div class="ownership-ratio"><span>30%</span><b>→</b><span>30%</span></div><div class="ownership-labels"><span>of the collateral</span><span>of the shares</span></div><p class="callout small">Next: use onchain contribution records<br>to inform ownership allocations.</p></div>
+<div><p class="eyebrow">The property owner</p><h2>A joint-stock company.</h2><p class="small">Collateral contributors receive<br>company shares proportional<br>to their contribution.</p></div>
+<div><p class="eyebrow">Illustrative allocation</p><div class="ownership-ratio"><span>30%</span><b>→</b><span>30%</span></div><div class="ownership-labels"><span>of the collateral</span><span>of the shares</span></div><p class="callout small">Next: use onchain contribution records<br>to determine ownership allocations.</p></div>
 </div>
 
 <!--
 The OWN pilot describes a Czech joint-stock company as the borrower and property owner. The BORDEL story describes the allocation principle: collateral contributors receive shares in proportion to their contributions. For example, 30% of the collateral corresponds to 30% of the shares in this simplified explanation. This is an allocation illustration, not an independently checked shareholder register. Future accounting could use onchain contribution and repayment data to inform company share allocations. Multisig signing power is not automatically a company shareholding: the legal records and agreements must implement the intended rights.
 Sources: https://pilot.own.casa/ ; https://loan.bordel.wtf/
+-->
+
+---
+layout: blueprint
+section: '03 / BORDEL · Shared wallet'
+---
+
+# A multisig shares control of the wallet
+
+<div class="two-col multisig-grid">
+<div><p class="eyebrow">Shared wallet</p><h2>A multisig needs<br>several approvals.</h2><p class="small">Useful when a community<br>manages funds together.</p></div>
+<div><p class="eyebrow">Illustrative / 2 of 3 signers</p><div class="signers"><span class="signed">A ✓</span><span class="signed">B ✓</span><span>C</span><b>→</b><span class="transaction">Execute</span></div><p class="small muted">Propose → collect approvals → execute</p><p class="small">No single key can move the funds alone.</p></div>
+</div>
+
+<!--
+A multisig is a wallet requiring a threshold of signers to approve transactions. In an illustrative 2-of-3 wallet, one person proposes a transaction, two signers approve, and the transaction can execute. Useful for a shared treasury, accepting a loan or authorizing repayments. It reduces dependence on one key. This diagram does not claim BORDEL uses exactly 2 of 3 signers. Wallet signing authority and company shares are distinct.
 -->
 
 ---
@@ -420,7 +420,7 @@ One possible arrangement: establish an SPV to own the property; it issues compan
 section: '04 / Real-world collateral · Default'
 ---
 
-# Agree what happens if repayment fails
+# Agree what happens in case of default
 
 <div class="two-col default-options">
 <div><p class="eyebrow">Route A / Ownership</p><h2>Lenders take over<br>the pledged shares.</h2><p>Control of the property-owning company can change hands.</p></div>
@@ -434,7 +434,40 @@ These are possible agreed recovery routes, not automatic legal consequences in e
 -->
 
 ---
-section: '04 / Real-world collateral · Open exploration'
+layout: blueprint
+section: '05 / Another use case · DAO treasury credit · Proposal'
+---
+
+# Liquidity for holders. Income for the DAO.
+
+<FinanceDiagram kind="dao" />
+
+<div class="dao-caption"><p class="small">Borrow against the DAO’s token.<br>Pay principal + interest back to the treasury.</p><a href="https://gno.own.casa/">gno.own.casa ↗</a></div>
+
+<!--
+A DAO holding stablecoins could lend to holders against its own token. The holder obtains liquidity without selling; the treasury can earn interest if the loan performs. Principal returning is not income. A fixed interest rate can make contractual cash flows predictable, but it does not guarantee actual income: token prices, repayment and recovery still matter. Introduce GNO as the Gnosis token and gno.own.casa as the linked credit example, without asserting a DAO vote, commitment or funded facility. Terms and eligibility are for the specific arrangement.
+Source: https://gno.own.casa/
+-->
+
+---
+section: '05 / Further possibilities · Undercollateralized lending'
+---
+
+# Exploration: undercollateralized lending
+
+<div class="two-col undercollateralized">
+<div><p class="eyebrow">Illustrative loan</p><div class="loan-total">€100k</div><div class="coverage-bar"><span>€60k secured</span><span>€40k gap</span></div><p class="small muted">Collateral covers only part of the loan.</p></div>
+<div><h2>Something else must<br>support the promise.</h2><p class="small">Revenue, guarantees,<br>reputation, etc...</p></div>
+</div>
+
+<p class="source spaced">An exploration direction · the uncovered portion increases lender risk.</p>
+
+<!--
+Undercollateralized means collateral is worth less than the debt it secures. In this illustrative €100k loan with €60k collateral, €40k is initially uncovered, ignoring interest and recovery costs. That makes underwriting the borrower, income and any guarantees or legal recourse more important. Social trust can be valuable here; it cannot be replaced by a token or an automated rule. This is a further direction to explore, not a statement that the BORDEL installments product allows initial LTV above 100%, nor a ready-made product promise.
+-->
+
+---
+section: '06 / Open exploration'
 class: exploration-slide
 ---
 
@@ -446,40 +479,6 @@ class: exploration-slide
 
 <!--
 This is an invitation to discovery. We are exploring how different ownership structures, repayment sources and jurisdictions can fit real communities. We want to work on a concrete case together, rather than assume the same arrangement works everywhere. Ask interested people to bring their actual constraints: what they want to finance, what assets they have, their timeline and where the project is based.
--->
-
----
-layout: blueprint
-section: '05 / Another use case · DAO treasury credit · Proposal'
----
-
-# Liquidity for holders. Income for the DAO.
-
-<FinanceDiagram kind="dao" />
-
-<div class="dao-caption"><p class="small">Borrow against the DAO’s token.<br>Pay principal + interest back to the treasury.</p><a href="https://gno.own.casa/">gno.own.casa ↗</a></div>
-<p class="source">Interest can create treasury income; repayments and recovery remain at risk.</p>
-
-<!--
-A DAO holding stablecoins could lend to holders against its own token. The holder obtains liquidity without selling; the treasury can earn interest if the loan performs. Principal returning is not income. A fixed interest rate can make contractual cash flows predictable, but it does not guarantee actual income: token prices, repayment and recovery still matter. Introduce GNO as the Gnosis token and gno.own.casa as the linked credit example, without asserting a DAO vote, commitment or funded facility. Terms and eligibility are for the specific arrangement.
-Source: https://gno.own.casa/
--->
-
----
-section: '05 / Further possibilities · Undercollateralized lending'
----
-
-# What if collateral is not enough?
-
-<div class="two-col undercollateralized">
-<div><p class="eyebrow">Illustrative loan</p><div class="loan-total">€100k</div><div class="coverage-bar"><span>€60k secured</span><span>€40k gap</span></div><p class="small muted">Collateral covers only part of the loan.</p></div>
-<div><h2>Something else must<br>support the promise.</h2><p class="small">Revenue, guarantees,<br>reputation, or legal recourse.</p><p class="callout small">Transparent rules can help.<br>They cannot create repayment capacity.</p></div>
-</div>
-
-<p class="source spaced">An exploration direction · the uncovered portion increases lender risk.</p>
-
-<!--
-Undercollateralized means collateral is worth less than the debt it secures. In this illustrative €100k loan with €60k collateral, €40k is initially uncovered, ignoring interest and recovery costs. That makes underwriting the borrower, income and any guarantees or legal recourse more important. Social trust can be valuable here; it cannot be replaced by a token or an automated rule. This is a further direction to explore, not a statement that the BORDEL installments product allows initial LTV above 100%, nor a ready-made product promise.
 -->
 
 ---
